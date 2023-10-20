@@ -62,6 +62,7 @@ input("Haz clic en elementos de la página y posiciona el mouse sobre ellos. Lue
 
 elements = driver.execute_script("return window.elements;")
 print(elements)
+print(elements[0].get_attribute('xpath'))
 
 # Cerrar el navegador
 driver.quit()
